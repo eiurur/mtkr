@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "mtkr",
+  "description": "Amazon Prime Video 視聴管理",
+  "version": "1.0.0",
+  "permissions": [
+    "tabs",
+    "storage",
+    "notifications",
+    "https://www.amazon.co.jp/gp/video/detail/*"
+  ],
+  "background": {
+    "persistent": false,
+    "scripts": ["build/js/background.bundle.js"]
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "build/images/icon16-g.png"
+    }
+  },
+  "options_page": "build/views/options.html",
+  "icons": {
+    "16": "build/images/icon16.png",
+    "48": "build/images/icon48.png",
+    "128": "build/images/icon128.png"
+  }
+}
